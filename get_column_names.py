@@ -9,10 +9,10 @@ def get_column_names(data):
     """
     column_name = []
     row = data.split('\n')
-    #row.pop()
+    column_name = row[0].split(',')
           
     
-    return row
+    return column_name
     
 # Read the csv file
 data = open('data.csv').read()
