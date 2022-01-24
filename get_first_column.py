@@ -9,12 +9,12 @@ def get_first_column(data):
     columns = []
     row = data.split('\n')
     idx = 0
-    while idx < len(row)-1:
+    while idx < len(row):
         columns.append(row[idx].split(','))
         idx += 1
     first_column = []
     idx = 0
-    while idx < len(columns)-1:
+    while idx < len(columns):
         first_column.append(columns[idx][0])
         idx += 1
     return first_column
