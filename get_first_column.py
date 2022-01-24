@@ -6,9 +6,17 @@ def get_first_column(data):
     Return:
         list: First column.
     """
-    first_column = []
+    columns = []
     row = data.split('\n')
-    first_column = row[1].split(',')
+    idx = 0
+    while idx < len(row)-1:
+        columns.append(row[idx].split(','))
+        idx += 1
+    first_column = []
+    idx = 0
+    while idx < len(columns):
+        first_column.append(columns[idx][0])
+        idx += 1
     return first_column
     
 # Read the csv file
