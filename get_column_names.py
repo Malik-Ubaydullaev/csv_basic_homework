@@ -9,7 +9,7 @@ def get_column_names(data):
     """
     column_name = []
     row = data.split('\n')
-    row.pop()
+    #row.pop()
           
     
     return row
